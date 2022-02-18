@@ -1,0 +1,45 @@
+.SupportApp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    color: white;
+}
+
+.support-textarea{
+    padding: 10px;
+    width: 65vw;
+    height: 30vh;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.support-textarea:focus{
+    box-shadow: 0 0 20px rgb(33, 252, 5);
+    outline: none;
+}
+
+
+.support-send{
+    margin-top: 35px;
+    color: rgb(11, 230, 238);
+    cursor: pointer;
+    transition: all 0.5s;
+    animation: send-button 1s;
+}
+
+.support-send:hover{
+    transform: translateY(-10px);
+}
+
+@keyframes send-button{
+    0%{
+        transform: translate(-50vw) rotate(360deg);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translate(0vw);
+        opacity: 1;
+    }
+}

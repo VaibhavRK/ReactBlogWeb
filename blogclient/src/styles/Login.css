@@ -1,0 +1,82 @@
+.LoginApp{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 30vh;
+    background-color: rgb(38, 240, 20);
+    border-radius: 20px;
+}
+
+.login-wrap:hover{
+    box-shadow: 0 0 20px rgb(8, 247, 20);
+}
+
+.login-google{
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+    /* animation: send-button 1s; */
+}
+
+.login-google:hover{
+    /* transform: translateY(-15px); */
+    animation: popup-anima 0.5s;
+}
+
+.login-wrap h4{
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: white;
+    text-shadow: 0 0 10px black;
+}
+
+.logout-wrap{
+    cursor: pointer;
+    animation: send-button 1s;
+}
+
+.logout-class{
+    transition: all 0.5s;
+    margin-bottom: -8px;
+}
+
+.logout-class:hover{
+    animation: popup-anima 0.5s;
+}
+
+@keyframes popup-anima{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width:912px){
+    .login-wrap{
+        height: 30vh;
+        margin-top: 100px;
+    }
+}
+
+@media (max-width:416px){
+    .login-wrap{
+        width: 80vw;
+        height: 35vh;
+    }
+}

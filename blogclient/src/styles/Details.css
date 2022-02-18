@@ -1,0 +1,47 @@
+.DetailsApp{
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-options{
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+}
+
+.blog-title{
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    text-shadow: 0 0 20px rgb(35, 233, 17);
+    margin-top: 40px;
+}
+
+.author-detail-date{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+    font-size: 1rem;
+    color: rgb(22, 228, 22);
+    /* text-shadow: 0 0 20px white; */
+}
+
+.author-detail-date span{
+    transition: all 0.5s;
+}
+
+.author-detail-date span:hover{
+    transform: scale(1.15);
+}
+
+.blog-data{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 0 20px red;
+}
+
+.details-edit-hide{
+    display: none;
+}

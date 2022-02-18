@@ -1,0 +1,110 @@
+.category-posts{
+    display: flex;
+}
+
+.categoryApp{
+    width: 200px;
+}
+
+.create-blog-button{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid green; */
+    border-radius: 10px;
+    /* margin-left: 32px; */
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    position: relative;
+    /* width: fit-content; */
+}
+
+.arrow{
+    color: white;
+    padding: 0px;
+    transition: all 0.5s ;
+}
+
+.create-blog-button button{
+    background: none;
+    border-width: 0px;
+    color: white;
+}
+
+.back-animation{
+    /* visibility: hidden; */
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 31px;
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+    z-index: -1;
+    background-color: #13e70c;
+    transition: all 0.5s ease-out;
+}
+
+.create-blog-button:hover .back-animation{
+    width: 170px;
+    border-radius: 50px;
+    box-shadow: 0 0 20px yellow;
+}
+
+.create-blog-button:hover .arrow{
+    transform: rotate(360deg);
+}
+
+.categoryApp ul{
+    list-style: none;
+}
+
+.categoryApp li{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: 2px solid rgba(6, 165, 78, 0.877);
+    text-align: center;
+    margin: 8px 0px;
+    color: white;
+}
+
+.categoryApp li:hover{
+    box-shadow:  0 0 20px #13e70c;
+    text-shadow: 0 0 20px #13e70c;
+    color: white;
+    font-weight: bold;
+}
+
+.category{
+    width: 300px;
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    margin-top: 20px;
+}
+
+.all-posts{
+    margin-top: 70px;
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (max-width:529px){
+    .category-posts{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .category-list{
+        display: flex;
+        flex-direction: row;
+        width: 80vw;
+        flex-wrap: wrap;
+        margin-top: 5px;
+    }
+    .category-list li{
+        margin: 5px;
+    }
+}

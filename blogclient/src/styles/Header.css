@@ -1,0 +1,170 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+nav{
+	position: relative;
+	margin: auto;
+	width: 595px;
+	height: 50px;
+	background: hsla(163, 78%, 2%, 0.795);
+	border-radius: 8px;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+    margin-top: 8px;
+    border: 2px solid green;
+}
+nav:hover{
+    box-shadow: 0 0 50px rgb(13, 216, 13);
+}
+nav a{
+	font-size: 15px;
+	text-transform: uppercase;
+	color: rgb(21, 224, 82);
+	text-decoration: none;
+	line-height: 50px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+
+.log-button{
+    background: unset;
+    border: none;
+    text-transform: uppercase;
+    color: rgb(21, 224, 82);
+}
+
+.log-button:hover{
+    color: rgb(16, 233, 16);
+    text-shadow: 0 0 10px rgb(228, 253, 1);
+}
+
+nav .animation{
+	position: absolute;
+	height: 100%;
+	/* height: 5px; */
+	top: 0;
+	/* bottom: 0; */
+	z-index: 0;
+	background: white;
+	border-radius: 8px;
+	transition: all .5s ease 0s;
+}
+nav a:hover{
+    color: rgb(16, 233, 16);
+    text-shadow: 0 0 10px rgb(228, 253, 1);
+}
+nav a:nth-child(1){
+	width: 100px;
+}
+nav .start-home, a:nth-child(1):hover~.animation{
+	width: 100px;
+	left: 0;
+}
+nav a:nth-child(2){
+	width: 110px;
+}
+nav a:nth-child(2):hover~.animation{
+	width: 110px;
+	left: 100px;
+}
+nav a:nth-child(3){
+	width: 100px;
+}
+nav a:nth-child(3):hover~.animation{
+	width: 100px;
+	left: 210px;
+}
+nav a:nth-child(4){
+	width: 160px;
+}
+nav a:nth-child(4):hover~.animation{
+	width: 160px;
+	left: 310px;
+}
+nav a:nth-child(5){
+	width: 120px;
+}
+nav a:nth-child(5):hover~.animation{
+	width: 120px;
+	left: 470px;
+}
+
+.burger{
+   display: none;
+}
+
+.line{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 5px;
+}
+
+.visible{
+    display: flex;
+    transition: all 0.5s ease-out;
+}
+
+.h-nav{
+    height: 250px;
+    transition: all 0.5s ease-out;
+}
+
+
+@media (max-width:572px){
+    .view{
+        display: none;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        overflow: hidden;
+        width: 90vw;
+        background: rgb(7, 231, 7);
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    nav a{
+        color: black;
+        width: fit-content;
+    }
+
+    nav .animation{
+        display: none;
+    }
+    .burger{
+        display: inline-block;
+        position: absolute;
+        right: 10px;
+        top: 7px;
+    }
+    .visible{
+        display: flex;
+        /* transition: all 0.5s ease-out; */
+    }
+
+    .not-visible{
+        display: none;
+    }
+    
+    .addme{
+        height: 270px;
+        transition: all 0.5s ease-out;
+    }
+    
+    .removeme{
+        height: 50px;
+        transition: all 0.5s ease-out;
+    }
+
+    .opacity-change{
+        opacity: 0;
+    }
+
+    .log-button{
+        color: black;
+    }
+} 

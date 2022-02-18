@@ -1,0 +1,34 @@
+.ContactApp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.contact-data{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 60px;
+    background-color: rgb(35, 241, 8);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgb(7, 245, 19);
+    animation: fade-down 1s;
+}
+
+.contact-data h4,.contact-data h6{
+    animation: send-button 1s;
+}
+
+.social-icon{
+    margin: 8px 10px;
+    transition: all 0.5s;  
+    animation: send-button 1s;  
+}
+
+.social-icon:hover{
+    animation: popup-anima 0.5s;
+}
+

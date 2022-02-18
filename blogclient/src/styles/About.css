@@ -1,0 +1,61 @@
+.AboutApp{
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(7, 245, 19);
+    padding: 40px;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(7, 245, 19);
+    animation: fade-down 1s;
+}
+
+@keyframes fade-down{
+    0%{
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.about-data img{
+    height: 300px;
+    width: 400px;
+    animation: send-button 1s;
+}
+
+@media (max-width:768px) {
+    .about-data{
+        padding: 15px;
+        margin: 0px 5px;
+    }
+    .about-data img{
+        height: 200px;
+        width: 300px;
+    }
+}
+
+@media (max-width:416px) {
+    .about-data{
+        padding: 15px;
+        margin: 0px 20px;
+    }
+    .about-data img{
+        height: 170px;
+        width: 260px;
+    }
+}
