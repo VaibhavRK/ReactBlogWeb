@@ -25,10 +25,21 @@
 .social-icon{
     margin: 8px 10px;
     transition: all 0.5s;  
-    animation: send-button 1s;  
+    animation: social-icons-anima 1s;  
 }
 
 .social-icon:hover{
     animation: popup-anima 0.5s;
+}
+
+@keyframes social-icons-anima{
+    0%{
+        transform: translateX(-50vw);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
