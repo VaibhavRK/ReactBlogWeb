@@ -123,7 +123,7 @@ function CreatePost() {
                 </select>
             </div>
             <div className="create-title">
-                <input name='author' type="text" placeholder='Author' onChange={(e)=>{handlePost(e)}} />
+                <input name='author' type="text" placeholder='Author' onChange={(e)=>{handlePost(e)}} autoComplete='off' />
             </div>
 
             <div className='create-blog-data'>
