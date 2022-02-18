@@ -29,7 +29,7 @@
 }
 
 .social-icon:hover{
-    animation: popup-anima 0.5s;
+    transform: scale(1.2);
 }
 
 @keyframes social-icons-anima{
