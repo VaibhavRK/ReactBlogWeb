@@ -14,6 +14,12 @@ function Post({post}) {
     }
 
     const setElipseHeading = (str) =>{
+        str = str.replace("# ","");
+        str = str.replace("## ","");
+        str = str.replace('### ',"");
+        str = str.replace('#### ',"");
+        str = str.replace('##### ',"");
+        str = str.replace('###### ',"");
         if(str.length > 17){
             return `${str.substring(0,17)}...`
         }

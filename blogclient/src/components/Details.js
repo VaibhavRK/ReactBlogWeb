@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { AiTwotoneEdit,AiFillDelete } from 'react-icons/ai';
-import { Link, useParams, useHistory } from 'react-router-dom';
+import { useParams, useHistory } from 'react-router-dom';
 import '../styles/Details.css'
 import {getDetailData,deletePost} from '../services/api.js';
 import {confirm} from 'react-confirm-box';
@@ -79,7 +79,7 @@ function Details() {
         </div>
 
         <div className="blog-data">
-          <ReactMarkdown> {detailData.description} </ReactMarkdown>
+          <ReactMarkdown>{detailData.description}</ReactMarkdown>
         </div>
     </div>
   )
