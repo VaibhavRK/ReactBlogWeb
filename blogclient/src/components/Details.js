@@ -6,6 +6,7 @@ import {getDetailData,deletePost} from '../services/api.js';
 import {confirm} from 'react-confirm-box';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from '../config';
+import ReactMarkdown from 'react-markdown';
 
 
 function Details() {
