@@ -67,10 +67,14 @@
     }
 }
 
-@media (max-width:912px){
+@media (max-width:990px){
     .login-wrap{
+        width: 60vw;
         height: 30vh;
         margin-top: 100px;
+    }
+    .login wrap h4{
+        text-align: center;
     }
 }
 

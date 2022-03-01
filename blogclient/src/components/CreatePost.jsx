@@ -127,7 +127,7 @@ function CreatePost() {
             </div>
 
             <div className='create-blog-data'>
-                <textarea name="description" id="" cols="30" rows="10" placeholder='Enter your Story....' onChange={(e)=>{handlePost(e)}}></textarea>
+                <textarea name="description" id="" cols="30" rows="10" placeholder='Start make your blog.... (Also you can use Markdown here)' onChange={(e)=>{handlePost(e)}}></textarea>
             </div>
 
             <div className="create-blog-button2" onClick={savePost}>
