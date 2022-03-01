@@ -20,10 +20,11 @@ function Post({post}) {
         str = str.replace('#### ',"");
         str = str.replace('##### ',"");
         str = str.replace('###### ',"");
-        if(str.length > 17){
-            return `${str.substring(0,17)}...`
+        let resultStr = str;
+        if(resultStr.length > 17){
+            return `${resultStr.substring(0,17)}...`
         }
-        else return str;
+        else return resultStr;
     }
 
     return (
@@ -34,7 +35,7 @@ function Post({post}) {
                  <p style={{fontSize:'0.8rem'}}>Category: {post.categories}</p>
                  <h4 style={{fontSize:'1.4rem',marginTop:-16}}>{setElipseHeading(post.title)}</h4>
                  <p style={{fontSize:'0.8rem',marginTop:-6}} >Author: {setElipse(post.author)}</p>
-                 <p style={{marginTop:-15,textAlign:'center'}}> <ReactMarkdown>{setElipse(post.description)}</ReactMarkdown></p>
+                 <p style={{marginTop:-15,textAlign:'center'}}>{setElipse(post.description)}</p>
             </div>
         </div>
       </Tilt>
