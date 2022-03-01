@@ -28,7 +28,7 @@ function Post({post}) {
     }
 
     return (
-        <Tilt style={{height:'300px',width: '300px',glareEnable:true,margin:'20px'}}>
+        <Tilt style={{height:'300px',width: '300px',glareEnable:true,margin:'20px 10px'}}>
         <div className='Post-Card' >
             <img src={url} alt="" />
             <div className="all-blog-data">
