@@ -80,3 +80,13 @@
         height: 35vh;
     }
 }
+
+@media (max-width:380px){
+    .login-wrap{
+        width: 80vw;
+        height: 35vh;
+    }
+    .LoginApp h4{
+        text-align: center;
+    }
+}
