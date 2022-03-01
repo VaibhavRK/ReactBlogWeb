@@ -78,7 +78,7 @@ function Details() {
         </div>
 
         <div className="blog-data">
-            {detailData.description}
+          <ReactMarkdown> {detailData.description} </ReactMarkdown>
         </div>
     </div>
   )
